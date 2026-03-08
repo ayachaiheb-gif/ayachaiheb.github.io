@@ -19,6 +19,10 @@ align-items:center;
 padding:20px 50px;
 background:#4b3832;
 color:white;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
 }
 
 nav a{
@@ -142,4 +146,7 @@ to{
 opacity:1;
 transform:translateY(0);
 }
+}
+body{
+padding-top:80px;
 }

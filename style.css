@@ -199,3 +199,42 @@ cursor:pointer;
 #topBtn:hover{
 background:#4b3832;
 }
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:#4b3832;
+color:white;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+}
+
+.navbar ul li{
+margin-left:20px;
+}
+
+.navbar ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.navbar ul li a:hover{
+color:#d7b19d;
+}
+footer{
+background:#4b3832;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+footer a{
+color:#d7b19d;
+text-decoration:none;
+}

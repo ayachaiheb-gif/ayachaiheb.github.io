@@ -2,7 +2,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:'Poppins', sans-serif;
 }
 
 body{
@@ -128,4 +128,18 @@ background:#4b3832;
 color:#f5eee6;
 text-align:center;
 padding:20px;
+}
+section{
+padding:80px 20px;
+text-align:center;
+opacity:0;
+transform:translateY(30px);
+animation:fadeIn 1s forwards;
+}
+
+@keyframes fadeIn{
+to{
+opacity:1;
+transform:translateY(0);
+}
 }

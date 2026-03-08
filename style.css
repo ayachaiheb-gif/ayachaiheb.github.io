@@ -155,3 +155,12 @@ width:100%;
 border-radius:10px;
 margin-bottom:10px;
 }
+footer i{
+font-size:30px;
+color:#d9b08c;
+margin-top:10px;
+}
+
+footer i:hover{
+color:white;
+}

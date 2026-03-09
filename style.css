@@ -114,6 +114,8 @@ display:block;
 height:10px;
 background:#854442;
 border-radius:5px;
+width:0;
+transition:width 2s;
 }
 
 /* EXPERIENCE */

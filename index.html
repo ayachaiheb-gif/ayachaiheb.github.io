@@ -297,7 +297,28 @@ behavior:"smooth"
 <script>
 AOS.init();
 </script>
+<script>
 
+const skills = document.querySelectorAll(".bar span");
+
+window.addEventListener("scroll", function(){
+
+skills.forEach(skill =>{
+
+let skillPosition = skill.getBoundingClientRect().top;
+let screenPosition = window.innerHeight;
+
+if(skillPosition < screenPosition){
+
+skill.style.width = skill.getAttribute("data-width");
+
+}
+
+});
+
+});
+
+</script>
 </body>
 
 </html>

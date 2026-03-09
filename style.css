@@ -260,3 +260,27 @@ width:100%;
 border-radius:10px;
 margin-bottom:10px;
 }
+#themeBtn{
+background:#d9b08c;
+border:none;
+padding:8px 12px;
+border-radius:5px;
+cursor:pointer;
+font-size:18px;
+}
+.dark-mode{
+background:#2b2b2b;
+color:white;
+}
+
+.dark-mode section{
+background:#2b2b2b;
+color:white;
+}
+
+.dark-mode .project-card,
+.dark-mode .service-card,
+.dark-mode .timeline-item{
+background:#3a3a3a;
+color:white;
+}

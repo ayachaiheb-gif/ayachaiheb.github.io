@@ -441,3 +441,69 @@ transform:translateY(0);
 .contact-form textarea:hover{
 transform:scale(1.02);
 }
+/* MOBILE RESPONSIVE */
+
+@media (max-width:768px){
+
+/* NAVBAR */
+
+.navbar{
+padding:15px 20px;
+flex-direction:column;
+}
+
+.navbar ul{
+margin-top:10px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+/* HERO */
+
+.hero h1{
+font-size:32px;
+}
+
+.hero h2{
+font-size:18px;
+}
+
+/* SKILLS */
+
+.skill{
+width:90%;
+}
+
+/* PROJECTS */
+
+.projects-grid{
+grid-template-columns:1fr;
+width:90%;
+}
+
+/* SERVICES */
+
+.service-card{
+width:90%;
+}
+
+/* TIMELINE */
+
+.timeline{
+width:90%;
+}
+
+/* CONTACT */
+
+.contact-form{
+width:90%;
+padding:25px;
+}
+
+/* CONTACT ICONS */
+
+.contact-icons{
+gap:20px;
+}
+
+}

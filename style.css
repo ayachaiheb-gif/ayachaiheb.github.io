@@ -413,3 +413,31 @@ color:green;
 margin-top:10px;
 font-weight:bold;
 }
+/* CONTACT FORM ANIMATION */
+
+.contact-form{
+background:white;
+padding:40px;
+width:420px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+display:flex;
+flex-direction:column;
+gap:15px;
+
+/* animation */
+opacity:0;
+transform:translateY(40px);
+animation:contactFade 1.2s ease forwards;
+}
+
+@keyframes contactFade{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+.contact-form input:hover,
+.contact-form textarea:hover{
+transform:scale(1.02);
+}

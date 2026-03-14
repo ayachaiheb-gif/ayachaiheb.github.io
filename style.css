@@ -385,3 +385,25 @@ transition:0.3s;
 background:#c49a6c;
 transform:scale(1.05);
 }
+.contact-icons{
+display:flex;
+justify-content:center;
+gap:40px;
+margin-bottom:40px;
+flex-wrap:wrap;
+}
+
+.icon-box{
+text-align:center;
+}
+
+.icon-box i{
+font-size:28px;
+color:#d9b08c;
+margin-bottom:10px;
+}
+
+.icon-box p{
+font-size:14px;
+color:#4b3832;
+}

@@ -515,3 +515,106 @@ gap:20px;
 }
 
 }
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media (max-width:768px){
+
+/* NAVBAR */
+
+.navbar{
+flex-direction:column;
+padding:15px 20px;
+}
+
+.navbar ul{
+flex-wrap:wrap;
+justify-content:center;
+margin-top:10px;
+}
+
+.navbar ul li{
+margin:8px;
+}
+
+/* HERO */
+
+.hero{
+height:auto;
+padding:100px 20px;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+.hero h2{
+font-size:18px;
+}
+
+/* PROFILE IMAGE */
+
+.profile-pic{
+width:120px;
+}
+
+/* SKILLS */
+
+.skill{
+width:90%;
+}
+
+/* SERVICES */
+
+.service-card{
+width:90%;
+}
+
+/* PROJECTS GRID */
+
+.projects-grid{
+grid-template-columns:1fr;
+width:90%;
+}
+
+/* PROJECT CARD */
+
+.project-card img{
+height:180px;
+}
+
+/* CONTACT */
+
+.contact-form{
+width:90%;
+padding:25px;
+}
+
+.contact-icons{
+flex-direction:column;
+gap:15px;
+}
+
+}
+
+/* ===== SMALL PHONES ===== */
+
+@media (max-width:480px){
+
+.hero h1{
+font-size:26px;
+}
+
+.hero h2{
+font-size:16px;
+}
+
+.btn{
+padding:10px 18px;
+font-size:14px;
+}
+
+.project-card img{
+height:160px;
+}
+
+}

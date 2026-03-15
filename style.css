@@ -92,9 +92,11 @@ text-align:center;
 /* ABOUT PHOTO */
 
 .profile-pic{
-width:160px;
+width:220px;
 border-radius:50%;
-margin:20px;
+margin:20px auto;
+display:block;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
 /* SKILLS */

@@ -2,7 +2,6 @@
 <html lang="fr">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,72 +9,62 @@
 <meta name="keywords" content="marketing digital, portfolio, communication digitale">
 <meta name="author" content="Aya Chaiheb">
 
-<link rel="icon" type="image/png" href="favicon.png">
-
 <title>Aya Chaiheb Portfolio</title>
+
+<link rel="icon" type="image/png" href="favicon.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 <link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 
 <body>
 
 <!-- NAVBAR -->
-
 <nav class="navbar">
-
 <h2 class="logo">Aya Chaiheb</h2>
 
 <ul>
 <li><a href="#about">À propos</a></li>
 <li><a href="#skills">Compétences</a></li>
-<li><a href="#experience">Experience</a></li>
+<li><a href="#experience">Expérience</a></li>
 <li><a href="#services">Services</a></li>
 <li><a href="#projects">Projets</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
+
 <button id="themeBtn">🌙</button>
 </nav>
 
 <!-- HERO -->
-
 <section class="hero">
+<canvas id="particles"></canvas>
 
 <h1>Bonjour, je suis Aya Chaiheb</h1>
-
 <h2><span id="typing"></span></h2>
 
-<a href="Aya_Chaiheb_CV.pdf" class="btn" download>Télécharger mon CV</a>
-
+<a href="Aya_Chaiheb_CV.pdf" class="btn" download>
+Télécharger mon CV
+</a>
 </section>
 
 <!-- ABOUT -->
-
-<section id="about" data-aos="fade-up">
-
+<section id="about" data-aos="fade-up" data-aos-duration="1200">
 <h2>À propos de moi</h2>
 
 <img src="Photo1.jpg" class="profile-pic">
 
 <p>
-Je suis  passionnée par le digital et les nouvelles technologies. 
-Actuellement en formation dans le domaine du marketing digital,
-je développe mes compétences en création de sites web, analyse de données et stratégie digitale.
-Motivée, curieuse et créative,je cherche toujours à apprendre de nouvelles choses et à améliorer mes compétences.
+Je suis passionnée par le digital et les nouvelles technologies. 
+Actuellement en formation en marketing digital, je développe mes compétences en création de sites web, analyse de données et stratégie digitale.
+Motivée, curieuse et créative, je cherche toujours à apprendre et à m'améliorer.
 </p>
-
 </section>
 
 <!-- SKILLS -->
-
-<section id="skills" data-aos="fade-right">
+<section id="skills" data-aos="fade-right" data-aos-duration="1200">
 <h2>Mes compétences</h2>
 
 <div class="skill">
@@ -101,268 +90,202 @@ Motivée, curieuse et créative,je cherche toujours à apprendre de nouvelles ch
 </section>
 
 <!-- EXPERIENCE -->
-
-<section id="projects" data-aos="zoom-in">
-
+<section id="experience" data-aos="zoom-in">
 <h2>Expérience & Formation</h2>
 
 <div class="timeline">
+
 <div class="timeline-item">
 <h3>Projet Marketing</h3>
 <p>2026</p>
-<p>Création d'une campagne de communication digitale pour une marque local.</p>
+<p>Création d'une campagne digitale pour une marque locale.</p>
 </div>
 
 <div class="timeline-item">
 <h3>Gestion Réseaux Sociaux</h3>
 <p>2025</p>
-<p>Création de contenu et gestion de comptes Instagram.</p>
+<p>Gestion de comptes Instagram.</p>
 </div>
 
 <div class="timeline-item">
 <h3>Projet Marketing</h3>
 <p>2024</p>
-<p>Création d'une stratégie marketing pour un projet académique.</p>
-</div>
+<p>Stratégie marketing académique.</p>
 </div>
 
+</div>
 </section>
 
 <!-- SERVICES -->
-
-<section id="services" data-aos="fade-left">
-
+<section id="services" data-aos="flip-left">
 <h2>Ce que je fais</h2>
 
 <div class="service-card">
 <h3>Marketing Digital</h3>
-<p>Création d'une campagne de communication digitale pour améliorer la visibilité d'une marque local.</p>
+<p>Création de campagnes digitales.</p>
 </div>
 
 <div class="service-card">
 <h3>Création de sites web</h3>
-<p>Développement de sites web simples et modernes.</p>
+<p>Sites modernes et responsives.</p>
 </div>
 
 <div class="service-card">
-<h3>Gestion des réseaux sociaux</h3>
-<p>Création de contenu et gestion des comptes Instagram.</p>
+<h3>Réseaux sociaux</h3>
+<p>Gestion Instagram.</p>
 </div>
 
 </section>
 
 <!-- PROJECTS -->
-
 <section id="projects" data-aos="zoom-in">
-
 <h2>Mes projets</h2>
 
 <div class="projects-grid">
 
 <div class="project-card">
-<img src="project1.jpg" alt="Project">
+<img src="project1.jpg">
 <h3>Projet Marketing</h3>
-<p>Stratégie marketing pour une marque.</p>
+<p>Stratégie marketing.</p>
 </div>
 
 <div class="project-card">
-<img src="project2.jpg" alt="Project">
+<img src="project2.jpg">
 <h3>Site Web</h3>
-<p>Création d’un site web simple.</p>
+<p>Création site web.</p>
 </div>
 
 <div class="project-card">
-<img src="project3.jpg" alt="Project">
+<img src="project3.jpg">
 <h3>Social Media</h3>
-<p>Création de contenu pour Instagram.</p>
+<p>Contenu Instagram.</p>
 </div>
 
 </div>
-
-</section>
-
 </section>
 
 <!-- CONTACT -->
-
-<section id="contact" class="contact">
-
+<section id="contact">
 <h2>Contactez-moi</h2>
-<p class="contact-subtitle">
-Une question ou un projet ? N'hésitez pas à me contacter.
-</p>
 
-<div class="contact-icons">
-
-<div class="icon-box">
-<i class="fas fa-envelope"></i>
-<p>ayachaiheb@gmail.com</p>
-</div>
-
-</div>
-
-<div class="contact-box">
-
-<form class="contact-form" id="contactForm">
-
+<form class="contact-form">
 <input type="text" placeholder="Votre nom" required>
-
 <input type="email" placeholder="Votre email" required>
-
 <textarea placeholder="Votre message..." required></textarea>
 
 <button type="submit">Envoyer</button>
-
-<p id="success-message">Message envoyé ✔</p>
-
 </form>
-
-</div>
-
 </section>
+
 <!-- FOOTER -->
-
 <footer>
-
-<p>© 2026 Aya Chaiheb | Digital Marketing Portfolio</p>
-
-<a href="https://www.linkedin.com/in/aya-chaiheb-b125493a2/" target="_blank">
-<i class="fa-brands fa-linkedin"></i>
-</a>
-
+<p>© 2026 Aya Chaiheb</p>
 </footer>
 
-<!-- BACK TO TOP -->
-
+<!-- BUTTON -->
 <button id="topBtn">↑</button>
 
-<!-- TYPING EFFECT -->
-
-<script>
-
-const text = [
-"Digital Marketing Student",
-"Social Media Manager",
-"Future Marketing Expert"
-];
-
-let index = 0;
-let charIndex = 0;
-
-function typeEffect(){
-
-if(charIndex < text[index].length){
-
-document.getElementById("typing").textContent += text[index].charAt(charIndex);
-
-charIndex++;
-
-setTimeout(typeEffect,100);
-
-}
-
-else{
-
-setTimeout(eraseEffect,1500);
-
-}
-
-}
-
-function eraseEffect(){
-
-if(charIndex > 0){
-
-document.getElementById("typing").textContent =
-text[index].substring(0,charIndex-1);
-
-charIndex--;
-
-setTimeout(eraseEffect,50);
-
-}
-
-else{
-
-index++;
-
-if(index >= text.length){
-
-index = 0;
-
-}
-
-setTimeout(typeEffect,500);
-
-}
-
-}
-
-typeEffect();
-
-</script>
-
-<!-- BACK TO TOP SCRIPT -->
-
-<script>
-
-let btn = document.getElementById("topBtn");
-
-btn.onclick = function(){
-window.scrollTo({
-top:0,
-behavior:"smooth"
-});
-}
-
-</script>
-
-<!-- SCROLL ANIMATION -->
+<!-- SCRIPTS -->
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script>
-AOS.init();
-</script>
-<script>
+AOS.init({ duration: 1000, once: true });
 
-const skills = document.querySelectorAll(".bar span");
+// Typing
+const text = ["Digital Marketing Student","Social Media Manager","Future Marketing Expert"];
+let i = 0, j = 0;
 
-window.addEventListener("scroll", function(){
+function type(){
+let el = document.getElementById("typing");
 
-skills.forEach(skill =>{
-
-let skillPosition = skill.getBoundingClientRect().top;
-let screenPosition = window.innerHeight;
-
-if(skillPosition < screenPosition){
-
-skill.style.width = skill.getAttribute("data-width");
-
+if(j < text[i].length){
+el.textContent += text[i][j];
+j++;
+setTimeout(type, 100);
+}else{
+setTimeout(erase, 1500);
+}
 }
 
-});
+function erase(){
+let el = document.getElementById("typing");
 
-});
+if(j > 0){
+el.textContent = text[i].substring(0, j-1);
+j--;
+setTimeout(erase, 50);
+}else{
+i = (i+1) % text.length;
+setTimeout(type, 500);
+}
+}
 
-</script>
-<script>
+type();
 
-const themeBtn = document.getElementById("themeBtn");
+// Scroll top
+document.getElementById("topBtn").onclick = () => {
+window.scrollTo({top:0, behavior:"smooth"});
+};
 
-themeBtn.onclick = function(){
-
+// Dark mode
+document.getElementById("themeBtn").onclick = () => {
 document.body.classList.toggle("dark-mode");
+};
 
+// PARTICLES (مصلح)
+const canvas = document.getElementById("particles");
+const ctx = canvas.getContext("2d");
+
+function resizeCanvas(){
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+}
+resizeCanvas();
+window.addEventListener("resize", resizeCanvas);
+
+let particles = [];
+
+class Particle{
+constructor(){
+this.x = Math.random()*canvas.width;
+this.y = Math.random()*canvas.height;
+this.size = Math.random()*3+1;
+this.speedX = Math.random()*1-0.5;
+this.speedY = Math.random()*1-0.5;
 }
 
+update(){
+this.x += this.speedX;
+this.y += this.speedY;
+}
+
+draw(){
+ctx.fillStyle="#d9b08c";
+ctx.beginPath();
+ctx.arc(this.x,this.y,this.size,0,Math.PI*2);
+ctx.fill();
+}
+}
+
+function init(){
+for(let i=0;i<80;i++){
+particles.push(new Particle());
+}
+}
+
+function animate(){
+ctx.clearRect(0,0,canvas.width,canvas.height);
+particles.forEach(p=>{
+p.update();
+p.draw();
+});
+requestAnimationFrame(animate);
+}
+
+init();
+animate();
 </script>
-</footer>
-
-<script src="script.js"></script>
 
 </body>
-</html>
-</body>
-
 </html>

@@ -219,12 +219,19 @@ section {
   object-fit: cover;
 }
 
-/* CONTACT */
+/* CONTACT SECTION */
 #contact {
   background: #f5eee6;
   padding: 100px 20px;
+  text-align: center;
 }
 
+.contact-subtitle {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* FORM */
 .contact-form {
   background: white;
   padding: 40px;
@@ -240,6 +247,57 @@ section {
   opacity: 0;
   transform: translateY(40px);
   animation: formFade 1s ease forwards;
+}
+
+/* INPUTS */
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #d9b08c;
+  box-shadow: 0 0 8px rgba(217,176,140,0.5);
+}
+
+/* BUTTON */
+.contact-form button {
+  background: #d9b08c;
+  color: #4b3832;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #c49a6c;
+  transform: scale(1.05);
+}
+
+/* SUCCESS MESSAGE */
+#success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* ANIMATION */
+@keyframes formFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes formFade {

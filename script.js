@@ -8,3 +8,4 @@ message.style.display = "block";
 
 form.reset();
 });
+document.getElementById("typing").textContent = "";

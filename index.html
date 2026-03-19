@@ -168,12 +168,18 @@ Motivée, curieuse et créative, je cherche toujours à apprendre et à m'améli
 <section id="contact">
 <h2>Contactez-moi</h2>
 
-<form class="contact-form">
+<form class="contact-form" id="contactForm">
+
 <input type="text" placeholder="Votre nom" required>
 <input type="email" placeholder="Votre email" required>
 <textarea placeholder="Votre message..." required></textarea>
 
 <button type="submit">Envoyer</button>
+
+<p id="success-message" style="display:none;">
+Message envoyé ✔
+</p>
+
 </form>
 </section>
 
@@ -233,7 +239,7 @@ document.getElementById("themeBtn").onclick = () => {
 document.body.classList.toggle("dark-mode");
 };
 
-// PARTICLES (مصلح)
+// PARTICLES 
 const canvas = document.getElementById("particles");
 const ctx = canvas.getContext("2d");
 

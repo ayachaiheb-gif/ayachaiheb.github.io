@@ -46,15 +46,20 @@ body {
 }
 
 /* HERO */
+/* HERO BACKGROUND ANIMATION */
+
 .hero {
   height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #4b3832, #854442);
   color: #f5eee6;
   text-align: center;
+
+  background: linear-gradient(-45deg, #4b3832, #854442, #d9b08c, #4b3832);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
 }
 
 .hero h1 {

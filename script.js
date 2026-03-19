@@ -13,6 +13,7 @@ let charIndex = 0;
 
 const typingElement = document.getElementById("typing");
 
+if(typingElement){
 typingElement.textContent = "";
 
 function typeEffect(){
@@ -37,25 +38,31 @@ setTimeout(typeEffect,500);
 }
 
 typeEffect();
-
+}
 
 // =========================
 // 🔝 BACK TO TOP
 // =========================
 
-document.getElementById("topBtn").onclick = () => {
+const topBtn = document.getElementById("topBtn");
+
+if(topBtn){
+topBtn.onclick = () => {
 window.scrollTo({ top:0, behavior:"smooth" });
 };
-
+}
 
 // =========================
 // 🌙 DARK MODE
 // =========================
 
-document.getElementById("themeBtn").onclick = () => {
+const themeBtn = document.getElementById("themeBtn");
+
+if(themeBtn){
+themeBtn.onclick = () => {
 document.body.classList.toggle("dark-mode");
 };
-
+}
 
 // =========================
 // 📊 SKILLS ANIMATION
@@ -70,7 +77,6 @@ skill.style.width = skill.getAttribute("data-width");
 }
 });
 });
-
 
 // =========================
 // ✉️ CONTACT FORM
@@ -92,7 +98,6 @@ message.style.display = "none";
 form.reset();
 });
 }
-
 
 // =========================
 // ✨ PARTICLES BACKGROUND
@@ -154,12 +159,3 @@ requestAnimationFrame(animate);
 init();
 animate();
 }
-const sections = document.querySelectorAll("section");
-
-window.addEventListener("scroll", () => {
-sections.forEach(sec => {
-if(sec.getBoundingClientRect().top < window.innerHeight - 100){
-sec.classList.add("show");
-}
-});
-});

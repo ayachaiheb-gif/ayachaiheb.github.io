@@ -327,3 +327,34 @@ footer {
     width: 90%;
   }
 }
+footer i {
+  font-size: 30px;
+  color: #d9b08c;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+footer i:hover {
+  color: white;
+  transform: scale(1.2);
+}
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #854442;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 999;
+  display: none;
+  transition: 0.3s;
+}
+
+#topBtn:hover {
+  background: #4b3832;
+  transform: scale(1.1);
+}

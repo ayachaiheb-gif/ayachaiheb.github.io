@@ -49,7 +49,6 @@ body {
 .hero {
   position: relative;
   overflow: hidden;
-
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -63,7 +62,7 @@ body {
   animation: gradientMove 10s ease infinite;
 }
 
-/* particles */
+/* PARTICLES */
 #particles {
   position: absolute;
   width: 100%;
@@ -73,7 +72,7 @@ body {
   z-index: 0;
 }
 
-/* content فوق particles */
+/* CONTENT فوق particles */
 .hero h1,
 .hero h2,
 .hero .btn {
@@ -85,13 +84,10 @@ body {
 .hero h1 {
   font-size: 50px;
   margin-bottom: 10px;
-  animation: slideDown 1s ease forwards;
 }
 
 .hero h2 {
   margin-bottom: 20px;
-  animation: fadeIn 2s ease forwards;
-  animation-delay: 0.5s;
 }
 
 .btn {
@@ -103,9 +99,6 @@ body {
   font-weight: bold;
   display: inline-block;
   margin-top: 20px;
-
-  animation: zoomIn 1.5s ease forwards;
-  animation-delay: 1s;
 }
 
 .btn:hover {
@@ -219,7 +212,7 @@ section {
   object-fit: cover;
 }
 
-/* CONTACT SECTION */
+/* CONTACT */
 #contact {
   background: #f5eee6;
   padding: 100px 20px;
@@ -231,7 +224,6 @@ section {
   margin-bottom: 30px;
 }
 
-/* FORM */
 .contact-form {
   background: white;
   padding: 40px;
@@ -242,11 +234,6 @@ section {
   display: flex;
   flex-direction: column;
   gap: 15px;
-
-  /* animation */
-  opacity: 0;
-  transform: translateY(40px);
-  animation: formFade 1s ease forwards;
 }
 
 /* INPUTS */
@@ -277,7 +264,6 @@ section {
   padding: 12px;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s;
 }
 
 .contact-form button:hover {
@@ -285,56 +271,6 @@ section {
   transform: scale(1.05);
 }
 
-/* SUCCESS MESSAGE */
-#success-message {
-  color: green;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-/* ANIMATION */
-@keyframes formFade {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes formFade {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  transition: 0.3s;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #d9b08c;
-  box-shadow: 0 0 8px rgba(217,176,140,0.5);
-}
-
-.contact-form button {
-  background: #d9b08c;
-  color: #4b3832;
-  border: none;
-  padding: 12px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.contact-form button:hover {
-  transform: scale(1.05);
-  background: #c49a6c;
-}
 /* FOOTER */
 footer {
   background: #4b3832;
@@ -344,47 +280,37 @@ footer {
   margin-top: 40px;
 }
 
+footer i {
+  font-size: 30px;
+  color: #d9b08c;
+  margin-top: 10px;
+}
+
+footer i:hover {
+  color: white;
+  transform: scale(1.2);
+}
+
+/* TOP BUTTON */
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #854442;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 999;
+}
+
 /* ANIMATIONS */
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes contactFade {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @keyframes borderMove {
   0% {background-position:0% 50%;}
   50% {background-position:100% 50%;}
   100% {background-position:0% 50%;}
-}
-
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
 }
 
 @keyframes gradientMove {
@@ -423,45 +349,4 @@ footer {
   .contact-form {
     width: 90%;
   }
-}
-footer i {
-  font-size: 30px;
-  color: #d9b08c;
-  margin-top: 10px;
-  transition: 0.3s;
-}
-
-footer i:hover {
-  color: white;
-  transform: scale(1.2);
-}
-#topBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #854442;
-  color: white;
-  border: none;
-  padding: 12px 15px;
-  font-size: 18px;
-  border-radius: 8px;
-  cursor: pointer;
-  z-index: 999;
-  display: none;
-  transition: 0.3s;
-}
-
-#topBtn:hover {
-  background: #4b3832;
-  transform: scale(1.1);
-}
-section {
-  opacity: 0;
-  transform: translateY(30px);
-}
-
-section.show {
-  opacity: 1;
-  transform: translateY(0);
-  transition: 1s;
 }
